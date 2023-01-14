@@ -1,6 +1,12 @@
 # React Micro Frontend compiler(cli)
 React, Typescript, Webpack 5, ModuleFederation
 
+## Used with
+<blockquote>
+  @reactmf/loader
+  <br>
+  https://github.com/macroarni/reactmf-loader
+</blockquote>
 
 ## Install
 <blockquote>
