@@ -1,6 +1,6 @@
 {
   "name": "@reactmf/compiler",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "React Micro Frontend compiler(cli), Typescript, Webpack 5, ModuleFederation",
   "repository": {
@@ -41,7 +41,8 @@
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "files": [
-    "/lib"
+    "/lib",
+    "/bin"
   ],
   "dependencies": {
     "yargs": "^17.6.2",
