@@ -1,0 +1,55 @@
+{
+  "name": "@reactmf/compiler",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "React Micro Frontend compiler(cli), Typescript, Webpack 5, ModuleFederation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macroarni/reactmf-compiler.git"
+  },
+  "author": "macroarni",
+  "bugs": {
+    "url": "https://github.com/macroarni/reactmf-compiler/issues"
+  },
+  "homepage": "https://github.com/macroarni/reactmf-compiler#readme",
+  "keywords": [
+    "typescript",
+    "react",
+    "webpack 5",
+    "webpack",
+    "microfrontend",
+    "microfrontends",
+    "micro frontend",
+    "modulefederation",
+    "module federation",
+    "craco",
+    "js",
+    "dynamic remotes",
+    "compiler",
+    "cli"
+  ],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "macrof": "./bin/index.js"
+  },
+  "scripts": {
+    "build:watch": "yarn build",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "yargs": "^17.6.2",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/webpack-sources": "^3.2.0",
+    "typescript": "^4.9.4"
+  }
+}
