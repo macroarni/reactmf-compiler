@@ -35,7 +35,6 @@
     "macrof": "./bin/index.js"
   },
   "scripts": {
-    "build:watch": "yarn build",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
